@@ -33,10 +33,7 @@ jobs:
         run: |
           mkdir -p /tmp/package
           cp -R .sourceknight/package/* /tmp/package
-          cp -R materials /tmp/package/common/
-          cp -R models /tmp/package/common/
-          cp -R addons /tmp/package/common/
-          cp -R sound /tmp/package/common/
+          cp -R addons/sourcemod/configs /tmp/package/common/addons/sourcemod/
 
       - name: Upload build archive for test runners
         uses: actions/upload-artifact@v4
